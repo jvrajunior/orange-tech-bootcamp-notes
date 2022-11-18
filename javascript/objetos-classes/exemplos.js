@@ -11,7 +11,7 @@ class Pessoa {
     }
 
     descrever() {
-        console.log('Meu nome e '+ this.nome +' e minha idade e '+this.idade+' anos.');
+        console.log('Meu nome Ã© '+ this.nome +' e minha idade Ã© '+this.idade+' anos.');
     }
 }
 
@@ -30,12 +30,12 @@ console.log(joao);
 
 
 /*
-// Declaração de um objeto com um método
+// Declaraï¿½ï¿½o de um objeto com um mï¿½todo
 const pessoa = {
     nome: 'Joao Vieira',
     idade: 31,
     descrever: function () {
-        console.log('Meu nome é '+ this.nome +' e minha idade é '+this.idade+' anos.');
+        console.log('Meu nome ï¿½ '+ this.nome +' e minha idade ï¿½ '+this.idade+' anos.');
     }
 };
 */
@@ -57,8 +57,8 @@ const pessoa = {
 */
 
 /*
-// Sobreposição de método do objeto.
+// Sobreposiï¿½ï¿½o de mï¿½todo do objeto.
 pessoa.descrever = function() {
-    console.log('Meu nome é '+ this.nome);
+    console.log('Meu nome ï¿½ '+ this.nome);
 }
 */
