@@ -1,12 +1,12 @@
-/*3) Elabore um algoritmo que calcule o que deve ser pago por um produto, considerando o preço normal de etiqueta e a
-escolha da condição de pagamento. 
-Utilize os códigos da tabela a seguir para ler qual a condição de pagamento escolhida e efetuar o cálculo adequado.
+/*3) Elabore um algoritmo que calcule o que deve ser pago por um produto, considerando o preï¿½o normal de etiqueta e a
+escolha da condiï¿½ï¿½o de pagamento. 
+Utilize os cï¿½digos da tabela a seguir para ler qual a condiï¿½ï¿½o de pagamento escolhida e efetuar o cï¿½lculo adequado.
 
-Código Condição de pagamento:
-- À vista Débito, recebe 10% de desconto;
-- À vista no Dinheiro ou PIX, recebe 15% de desconto;
-- Em duas vezes, preço normal de etiqueta sem juros;
-- Acima de duas vezes, preço normal de etiqueta mais juros de 10%;*/
+Cï¿½digo Condiï¿½ï¿½o de pagamento:
+- ï¿½ vista Dï¿½bito, recebe 10% de desconto;
+- ï¿½ vista no Dinheiro ou PIX, recebe 15% de desconto;
+- Em duas vezes, preï¿½o normal de etiqueta sem juros;
+- Acima de duas vezes, preï¿½o normal de etiqueta mais juros de 10%;*/
 
 function aplicarDesconto(valor,desconto) {
     descontoAplicado = desconto / 100
@@ -18,12 +18,12 @@ function aplicarJuros(valor,juros) {
     return valor + (valor * jurosAplicado)
 }
 
-const condicaoPagamento = "Credito"
+const condicaoPagamento = "CrÃ©dito"
 const numeroParcelas = 3
 
 if (condicaoPagamento == "Debito") {
     console.log(aplicarDesconto(10,10))
-} else if (condicaoPagamento == "Credito"){
+} else if (condicaoPagamento == "CrÃ©dito"){
     if (numeroParcelas > 2) {
         console.log(aplicarJuros(10,10))
     } else {

@@ -2,31 +2,29 @@
 
 ## Git
 
-### O que é o Git?
+### O que Ã© o Git?
 
-Git é um software de versionamento, criado para organizar as diferentes versões de um projeto de um forma segura utilizando SHA1 como codificação das informações para realizar comparações.
+Git Ã© um software de versionamento, criado para organizar as diferentes versÃµes de um projeto de um forma segura utilizando SHA1 como codificaÃ§Ã£o das informaÃ§Ãµes para realizar comparaÃ§Ãµes.
 
-### Configurações Gerais
+### ConfiguraÃ§Ãµes Gerais
 
 ``git config --global user.email "email@email.com"``
-- Define de forma global nas configurações do git, qual o email do usuário que irá realizar o versionamento.
+- Define de forma global nas configuraÃ§Ãµes do git, qual o email do usuÃ¡rio que irÃ¡ realizar o versionamento.
 
 ``git config --global user.name "Nome"``
-- Define de forma global nas configurações do git, qual o nome do usuário que irá realizar o versionamento.
+- Define de forma global nas configuraÃ§Ãµes do git, qual o nome do usuÃ¡rio que irÃ¡ realizar o versionamento.
 
-### Utilização
+### UtilizaÃ§Ã£o
 
 
 ``git status``
 - Verifica o status atual 
 
 ``git init``
-- Inicia um repositório no diretório atual, criando a a pasta .git dentro do projeto.
+- Inicia um repositÃ³rio no diretÃ³rio atual, criando a a pasta .git dentro do projeto.
 
 ``git add *``
 - Adiciona todos os arquivos modificados do projeto ao stage.
 
 ``git commit -m "Exemplo de commit."``
 - Realiza o comite dos arquivos em stage.
-
-

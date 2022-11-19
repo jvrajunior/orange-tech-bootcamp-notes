@@ -1,3 +1,3 @@
 # Bootcamp Orange Tech
 
-## Javascript Básico
+## Javascript BÃ¡sico
