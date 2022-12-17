@@ -29,16 +29,16 @@ barbara.descrever();
 console.log(joao);
 
 
-/*
-// Declara��o de um objeto com um m�todo
+
+// Declaração de um objeto com um método
 const pessoa = {
     nome: 'Joao Vieira',
     idade: 31,
     descrever: function () {
-        console.log('Meu nome � '+ this.nome +' e minha idade � '+this.idade+' anos.');
+        console.log('Meu nome é '+ this.nome +' e minha idade é '+this.idade+' anos.');
     }
 };
-*/
+
 
 /*
 // Exibir os valores dos atributos de um objeto

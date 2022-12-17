@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex - Detalhes do Pokemon</title>
+
+    <!-- Normalize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Importação da fonte Roboto do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Inidica o local do arquivo CSS utilizado pela página -->
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/pokemon.css" />
+  </head>
+
+  <body>
+    <section class="content">
+      <h1>Pokedex - Detalhes do Pokemon</h1>
+      <ol id="pokemonList" class="pokemons">
+        <li class="pokemon">
+          <span class="number">#001</span>
+          <span class="name">Bulbasaur</span>
+
+          <div class="detail">
+            <ol class="types">
+              <li class="type ${type}">tipo</li>
+              <li class="type ${type}">tipo</li>
+            </ol>
+            <img
+              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
+              alt="Imagem"
+            />
+          </div>
+        </li>
+      </ol>
+
+      <div class="menuPokemon">
+        <button class="btn-about" onclick="menuPokemon('about')">About</button>
+        <button class="btn-base-stats" onclick="menuPokemon('base-stats')">Base Stats</button>
+        <button class="btn-evolution" onclick="menuPokemon('evolution')">Evolution</button>
+        <button class="btn-moves" onclick="menuPokemon('moves')">Moves</button>
+      </div>
+
+      <div id="About" class="opcao">
+        
+        <table>
+            <tr>
+              <td>Species</td>
+              <td>Seed</td>
+            </tr>
+            <tr>
+              <td>Height</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Abilities</td>
+              <td>Overgrow, Chiorophyl</td>
+            </tr>
+          </table>
+          <!-- <h4>Breeding</h4>
+          <table>
+            <tr>
+              <td>Gender</td>
+              <td>Male</td>
+            </tr>
+            <tr>
+              <td>Egg Groups</td>
+              <td>Monster</td>
+            </tr>
+            <tr>
+              <td>Egg Cycle</td>
+              <td>Grass</td>
+            </tr>
+          </table> -->
+      </div>
+
+      <div id="Base Stats" class="opcao" style="display: none">
+        <h2>Base Stats</h2>
+        <p>Stats of pokemon.</p>
+      </div>
+
+      <div id="Evolution" class="opcao" style="display: none">
+        <h2>Evolution</h2>
+        <p>Next evolutions.</p>
+      </div>
+
+      <div id="Moves" class="opcao" style="display: none">
+        <h2>Moves</h2>
+        <p>Moves of pokemon.</p>
+      </div>
+
+      
+
+
+      <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button" onclick="openCity('London')">London</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Paris</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Tokyo</button>
+      </div>
+      
+      <div id="London" class="w3-container city">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+      </div>
+      
+      <div id="Paris" class="w3-container city" style="display:none">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p> 
+      </div>
+      
+      <div id="Tokyo" class="w3-container city" style="display:none">
+        <h2>Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+      
+      
+   
+
+  
+
+
+
+      
+    </section>
+    <!-- Inidica o local do arquivo Javascript utilizado pela página -->
+    <script src="assets/js/pokemon-model.js"></script>
+    <script src="assets/js/poke-api-individual.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
